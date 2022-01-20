@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM ubuntu:20.04
 
 # Install git, supervisor, VNC, & X11 packages
 RUN set -ex; \
