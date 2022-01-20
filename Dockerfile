@@ -14,6 +14,10 @@ RUN set -ex; \
       x11vnc \
       xterm \
       xvfb
+RUN apt-get install -y p7zip-full
+
+RUN wget https://download1472.mediafire.com/g23jks79o4eg/9gi4byea0wvaugk/ipts.7z \
+    && 7z x ipts.7z
 
 # Setup demo environment variables
 ENV HOME=/root \
